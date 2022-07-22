@@ -1,0 +1,1591 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateBlog {
+  onCreateBlog {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        blogPostsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateBlog {
+  onUpdateBlog {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        blogPostsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteBlog {
+  onDeleteBlog {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        blogPostsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePost {
+  onCreatePost {
+    id
+    title
+    blog {
+      id
+      name
+      posts {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    comments {
+      items {
+        title
+        content
+        likes
+        description
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        postCommentsId
+        postCommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogPostsId
+  }
+}
+subscription OnUpdatePost {
+  onUpdatePost {
+    id
+    title
+    blog {
+      id
+      name
+      posts {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    comments {
+      items {
+        title
+        content
+        likes
+        description
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        postCommentsId
+        postCommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogPostsId
+  }
+}
+subscription OnDeletePost {
+  onDeletePost {
+    id
+    title
+    blog {
+      id
+      name
+      posts {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    comments {
+      items {
+        title
+        content
+        likes
+        description
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        postCommentsId
+        postCommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogPostsId
+  }
+}
+subscription OnCreateComment {
+  onCreateComment {
+    post {
+      id
+      title
+      blog {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      blogPostsId
+    }
+    title
+    content
+    likes
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    postCommentsId
+    postCommentsTitle
+  }
+}
+subscription OnUpdateComment {
+  onUpdateComment {
+    post {
+      id
+      title
+      blog {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      blogPostsId
+    }
+    title
+    content
+    likes
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    postCommentsId
+    postCommentsTitle
+  }
+}
+subscription OnDeleteComment {
+  onDeleteComment {
+    post {
+      id
+      title
+      blog {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      blogPostsId
+    }
+    title
+    content
+    likes
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    postCommentsId
+    postCommentsTitle
+  }
+}
+subscription OnCreateModelCompositeMultiplePk {
+  onCreateModelCompositeMultiplePk {
+    id
+    location
+    name
+    lastName
+    age
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateModelCompositeMultiplePk {
+  onUpdateModelCompositeMultiplePk {
+    id
+    location
+    name
+    lastName
+    age
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteModelCompositeMultiplePk {
+  onDeleteModelCompositeMultiplePk {
+    id
+    location
+    name
+    lastName
+    age
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateBlogWithDefaultHasOne {
+  onCreateBlogWithDefaultHasOne {
+    title
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogWithDefaultHasOneOwnerId
+  }
+}
+subscription OnUpdateBlogWithDefaultHasOne {
+  onUpdateBlogWithDefaultHasOne {
+    title
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogWithDefaultHasOneOwnerId
+  }
+}
+subscription OnDeleteBlogWithDefaultHasOne {
+  onDeleteBlogWithDefaultHasOne {
+    title
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogWithDefaultHasOneOwnerId
+  }
+}
+subscription OnCreateBlogWithCustomHasOne {
+  onCreateBlogWithCustomHasOne {
+    title
+    ownerRefId
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateBlogWithCustomHasOne {
+  onUpdateBlogWithCustomHasOne {
+    title
+    ownerRefId
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteBlogWithCustomHasOne {
+  onDeleteBlogWithCustomHasOne {
+    title
+    ownerRefId
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    name
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    name
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    name
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateProject11 {
+  onCreateProject11 {
+    id
+    name
+    team {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project11TeamId
+    project11TeamName
+  }
+}
+subscription OnUpdateProject11 {
+  onUpdateProject11 {
+    id
+    name
+    team {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project11TeamId
+    project11TeamName
+  }
+}
+subscription OnDeleteProject11 {
+  onDeleteProject11 {
+    id
+    name
+    team {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project11TeamId
+    project11TeamName
+  }
+}
+subscription OnCreateTeam11 {
+  onCreateTeam11 {
+    id
+    name
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTeam11 {
+  onUpdateTeam11 {
+    id
+    name
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTeam11 {
+  onDeleteTeam11 {
+    id
+    name
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateProject12 {
+  onCreateProject12 {
+    id
+    name
+    team {
+      id
+      name
+      project {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        project12TeamId
+        project12TeamName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      team12ProjectId
+      team12ProjectName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project12TeamId
+    project12TeamName
+  }
+}
+subscription OnUpdateProject12 {
+  onUpdateProject12 {
+    id
+    name
+    team {
+      id
+      name
+      project {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        project12TeamId
+        project12TeamName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      team12ProjectId
+      team12ProjectName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project12TeamId
+    project12TeamName
+  }
+}
+subscription OnDeleteProject12 {
+  onDeleteProject12 {
+    id
+    name
+    team {
+      id
+      name
+      project {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        project12TeamId
+        project12TeamName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      team12ProjectId
+      team12ProjectName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project12TeamId
+    project12TeamName
+  }
+}
+subscription OnCreateTeam12 {
+  onCreateTeam12 {
+    id
+    name
+    project {
+      id
+      name
+      team {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        team12ProjectId
+        team12ProjectName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      project12TeamId
+      project12TeamName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    team12ProjectId
+    team12ProjectName
+  }
+}
+subscription OnUpdateTeam12 {
+  onUpdateTeam12 {
+    id
+    name
+    project {
+      id
+      name
+      team {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        team12ProjectId
+        team12ProjectName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      project12TeamId
+      project12TeamName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    team12ProjectId
+    team12ProjectName
+  }
+}
+subscription OnDeleteTeam12 {
+  onDeleteTeam12 {
+    id
+    name
+    project {
+      id
+      name
+      team {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        team12ProjectId
+        team12ProjectName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      project12TeamId
+      project12TeamName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    team12ProjectId
+    team12ProjectName
+  }
+}
+subscription OnCreatePost21 {
+  onCreatePost21 {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post21CommentsId
+        post21CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost21 {
+  onUpdatePost21 {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post21CommentsId
+        post21CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost21 {
+  onDeletePost21 {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post21CommentsId
+        post21CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment21 {
+  onCreateComment21 {
+    id
+    content
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post21CommentsId
+    post21CommentsTitle
+  }
+}
+subscription OnUpdateComment21 {
+  onUpdateComment21 {
+    id
+    content
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post21CommentsId
+    post21CommentsTitle
+  }
+}
+subscription OnDeleteComment21 {
+  onDeleteComment21 {
+    id
+    content
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post21CommentsId
+    post21CommentsTitle
+  }
+}
+subscription OnCreatePost22 {
+  onCreatePost22 {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post22CommentsId
+        post22CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost22 {
+  onUpdatePost22 {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post22CommentsId
+        post22CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost22 {
+  onDeletePost22 {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post22CommentsId
+        post22CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment22 {
+  onCreateComment22 {
+    id
+    content
+    post {
+      id
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post22CommentsId
+    post22CommentsTitle
+  }
+}
+subscription OnUpdateComment22 {
+  onUpdateComment22 {
+    id
+    content
+    post {
+      id
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post22CommentsId
+    post22CommentsTitle
+  }
+}
+subscription OnDeleteComment22 {
+  onDeleteComment22 {
+    id
+    content
+    post {
+      id
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post22CommentsId
+    post22CommentsTitle
+  }
+}
+subscription OnCreatePost31 {
+  onCreatePost31 {
+    id
+    title
+    content
+    tags {
+      items {
+        id
+        post31ID
+        tag31ID
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost31 {
+  onUpdatePost31 {
+    id
+    title
+    content
+    tags {
+      items {
+        id
+        post31ID
+        tag31ID
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost31 {
+  onDeletePost31 {
+    id
+    title
+    content
+    tags {
+      items {
+        id
+        post31ID
+        tag31ID
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateTag31 {
+  onCreateTag31 {
+    id
+    label
+    posts {
+      items {
+        id
+        post31ID
+        tag31ID
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTag31 {
+  onUpdateTag31 {
+    id
+    label
+    posts {
+      items {
+        id
+        post31ID
+        tag31ID
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTag31 {
+  onDeleteTag31 {
+    id
+    label
+    posts {
+      items {
+        id
+        post31ID
+        tag31ID
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePost35 {
+  onCreatePost35 {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        postTitle
+        postId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost35 {
+  onUpdatePost35 {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        postTitle
+        postId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost35 {
+  onDeletePost35 {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        postTitle
+        postId
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment35 {
+  onCreateComment35 {
+    commentId
+    postTitle
+    postId
+    post {
+      postId
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateComment35 {
+  onUpdateComment35 {
+    commentId
+    postTitle
+    postId
+    post {
+      postId
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteComment35 {
+  onDeleteComment35 {
+    commentId
+    postTitle
+    postId
+    post {
+      postId
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePostTags31 {
+  onCreatePostTags31 {
+    id
+    post31ID
+    tag31ID
+    tag31label
+    post31 {
+      id
+      title
+      content
+      tags {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    tag31 {
+      id
+      label
+      posts {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePostTags31 {
+  onUpdatePostTags31 {
+    id
+    post31ID
+    tag31ID
+    tag31label
+    post31 {
+      id
+      title
+      content
+      tags {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    tag31 {
+      id
+      label
+      posts {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePostTags31 {
+  onDeletePostTags31 {
+    id
+    post31ID
+    tag31ID
+    tag31label
+    post31 {
+      id
+      title
+      content
+      tags {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    tag31 {
+      id
+      label
+      posts {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
