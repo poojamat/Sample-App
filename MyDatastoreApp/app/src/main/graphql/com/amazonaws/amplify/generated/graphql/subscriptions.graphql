@@ -1,0 +1,1996 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateBlog($filter: ModelSubscriptionBlogFilterInput) {
+  onCreateBlog(filter: $filter) {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        blogPostsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateBlog($filter: ModelSubscriptionBlogFilterInput) {
+  onUpdateBlog(filter: $filter) {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        blogPostsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteBlog($filter: ModelSubscriptionBlogFilterInput) {
+  onDeleteBlog(filter: $filter) {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        blogPostsId
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePost($filter: ModelSubscriptionPostFilterInput) {
+  onCreatePost(filter: $filter) {
+    id
+    title
+    blog {
+      id
+      name
+      posts {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    comments {
+      items {
+        title
+        content
+        likes
+        description
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        postCommentsId
+        postCommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogPostsId
+  }
+}
+subscription OnUpdatePost($filter: ModelSubscriptionPostFilterInput) {
+  onUpdatePost(filter: $filter) {
+    id
+    title
+    blog {
+      id
+      name
+      posts {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    comments {
+      items {
+        title
+        content
+        likes
+        description
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        postCommentsId
+        postCommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogPostsId
+  }
+}
+subscription OnDeletePost($filter: ModelSubscriptionPostFilterInput) {
+  onDeletePost(filter: $filter) {
+    id
+    title
+    blog {
+      id
+      name
+      posts {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    comments {
+      items {
+        title
+        content
+        likes
+        description
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        postCommentsId
+        postCommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogPostsId
+  }
+}
+subscription OnCreateComment($filter: ModelSubscriptionCommentFilterInput) {
+  onCreateComment(filter: $filter) {
+    post {
+      id
+      title
+      blog {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      blogPostsId
+    }
+    title
+    content
+    likes
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    postCommentsId
+    postCommentsTitle
+  }
+}
+subscription OnUpdateComment($filter: ModelSubscriptionCommentFilterInput) {
+  onUpdateComment(filter: $filter) {
+    post {
+      id
+      title
+      blog {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      blogPostsId
+    }
+    title
+    content
+    likes
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    postCommentsId
+    postCommentsTitle
+  }
+}
+subscription OnDeleteComment($filter: ModelSubscriptionCommentFilterInput) {
+  onDeleteComment(filter: $filter) {
+    post {
+      id
+      title
+      blog {
+        id
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      comments {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      blogPostsId
+    }
+    title
+    content
+    likes
+    description
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    postCommentsId
+    postCommentsTitle
+  }
+}
+subscription OnCreateModelCompositeMultiplePk(
+  $filter: ModelSubscriptionModelCompositeMultiplePkFilterInput
+) {
+  onCreateModelCompositeMultiplePk(filter: $filter) {
+    id
+    location
+    name
+    lastName
+    age
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateModelCompositeMultiplePk(
+  $filter: ModelSubscriptionModelCompositeMultiplePkFilterInput
+) {
+  onUpdateModelCompositeMultiplePk(filter: $filter) {
+    id
+    location
+    name
+    lastName
+    age
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteModelCompositeMultiplePk(
+  $filter: ModelSubscriptionModelCompositeMultiplePkFilterInput
+) {
+  onDeleteModelCompositeMultiplePk(filter: $filter) {
+    id
+    location
+    name
+    lastName
+    age
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateBlogWithDefaultHasOne(
+  $filter: ModelSubscriptionBlogWithDefaultHasOneFilterInput
+) {
+  onCreateBlogWithDefaultHasOne(filter: $filter) {
+    title
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogWithDefaultHasOneOwnerId
+  }
+}
+subscription OnUpdateBlogWithDefaultHasOne(
+  $filter: ModelSubscriptionBlogWithDefaultHasOneFilterInput
+) {
+  onUpdateBlogWithDefaultHasOne(filter: $filter) {
+    title
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogWithDefaultHasOneOwnerId
+  }
+}
+subscription OnDeleteBlogWithDefaultHasOne(
+  $filter: ModelSubscriptionBlogWithDefaultHasOneFilterInput
+) {
+  onDeleteBlogWithDefaultHasOne(filter: $filter) {
+    title
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    blogWithDefaultHasOneOwnerId
+  }
+}
+subscription OnCreateBlogWithCustomHasOne(
+  $filter: ModelSubscriptionBlogWithCustomHasOneFilterInput
+) {
+  onCreateBlogWithCustomHasOne(filter: $filter) {
+    title
+    ownerRefId
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateBlogWithCustomHasOne(
+  $filter: ModelSubscriptionBlogWithCustomHasOneFilterInput
+) {
+  onUpdateBlogWithCustomHasOne(filter: $filter) {
+    title
+    ownerRefId
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteBlogWithCustomHasOne(
+  $filter: ModelSubscriptionBlogWithCustomHasOneFilterInput
+) {
+  onDeleteBlogWithCustomHasOne(filter: $filter) {
+    title
+    ownerRefId
+    owner {
+      name
+      id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateUser($filter: ModelSubscriptionUserFilterInput) {
+  onCreateUser(filter: $filter) {
+    name
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateUser($filter: ModelSubscriptionUserFilterInput) {
+  onUpdateUser(filter: $filter) {
+    name
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteUser($filter: ModelSubscriptionUserFilterInput) {
+  onDeleteUser(filter: $filter) {
+    name
+    id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateProject11($filter: ModelSubscriptionProject11FilterInput) {
+  onCreateProject11(filter: $filter) {
+    id
+    name
+    team {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project11TeamId
+    project11TeamName
+  }
+}
+subscription OnUpdateProject11($filter: ModelSubscriptionProject11FilterInput) {
+  onUpdateProject11(filter: $filter) {
+    id
+    name
+    team {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project11TeamId
+    project11TeamName
+  }
+}
+subscription OnDeleteProject11($filter: ModelSubscriptionProject11FilterInput) {
+  onDeleteProject11(filter: $filter) {
+    id
+    name
+    team {
+      id
+      name
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project11TeamId
+    project11TeamName
+  }
+}
+subscription OnCreateTeam11($filter: ModelSubscriptionTeam11FilterInput) {
+  onCreateTeam11(filter: $filter) {
+    id
+    name
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTeam11($filter: ModelSubscriptionTeam11FilterInput) {
+  onUpdateTeam11(filter: $filter) {
+    id
+    name
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTeam11($filter: ModelSubscriptionTeam11FilterInput) {
+  onDeleteTeam11(filter: $filter) {
+    id
+    name
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateProject12($filter: ModelSubscriptionProject12FilterInput) {
+  onCreateProject12(filter: $filter) {
+    id
+    name
+    team {
+      id
+      name
+      project {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        project12TeamId
+        project12TeamName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      team12ProjectId
+      team12ProjectName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project12TeamId
+    project12TeamName
+  }
+}
+subscription OnUpdateProject12($filter: ModelSubscriptionProject12FilterInput) {
+  onUpdateProject12(filter: $filter) {
+    id
+    name
+    team {
+      id
+      name
+      project {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        project12TeamId
+        project12TeamName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      team12ProjectId
+      team12ProjectName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project12TeamId
+    project12TeamName
+  }
+}
+subscription OnDeleteProject12($filter: ModelSubscriptionProject12FilterInput) {
+  onDeleteProject12(filter: $filter) {
+    id
+    name
+    team {
+      id
+      name
+      project {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        project12TeamId
+        project12TeamName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      team12ProjectId
+      team12ProjectName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    project12TeamId
+    project12TeamName
+  }
+}
+subscription OnCreateTeam12($filter: ModelSubscriptionTeam12FilterInput) {
+  onCreateTeam12(filter: $filter) {
+    id
+    name
+    project {
+      id
+      name
+      team {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        team12ProjectId
+        team12ProjectName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      project12TeamId
+      project12TeamName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    team12ProjectId
+    team12ProjectName
+  }
+}
+subscription OnUpdateTeam12($filter: ModelSubscriptionTeam12FilterInput) {
+  onUpdateTeam12(filter: $filter) {
+    id
+    name
+    project {
+      id
+      name
+      team {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        team12ProjectId
+        team12ProjectName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      project12TeamId
+      project12TeamName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    team12ProjectId
+    team12ProjectName
+  }
+}
+subscription OnDeleteTeam12($filter: ModelSubscriptionTeam12FilterInput) {
+  onDeleteTeam12(filter: $filter) {
+    id
+    name
+    project {
+      id
+      name
+      team {
+        id
+        name
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        team12ProjectId
+        team12ProjectName
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      project12TeamId
+      project12TeamName
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    team12ProjectId
+    team12ProjectName
+  }
+}
+subscription OnCreatePost21($filter: ModelSubscriptionPost21FilterInput) {
+  onCreatePost21(filter: $filter) {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post21CommentsId
+        post21CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost21($filter: ModelSubscriptionPost21FilterInput) {
+  onUpdatePost21(filter: $filter) {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post21CommentsId
+        post21CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost21($filter: ModelSubscriptionPost21FilterInput) {
+  onDeletePost21(filter: $filter) {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post21CommentsId
+        post21CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment21($filter: ModelSubscriptionComment21FilterInput) {
+  onCreateComment21(filter: $filter) {
+    id
+    content
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post21CommentsId
+    post21CommentsTitle
+  }
+}
+subscription OnUpdateComment21($filter: ModelSubscriptionComment21FilterInput) {
+  onUpdateComment21(filter: $filter) {
+    id
+    content
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post21CommentsId
+    post21CommentsTitle
+  }
+}
+subscription OnDeleteComment21($filter: ModelSubscriptionComment21FilterInput) {
+  onDeleteComment21(filter: $filter) {
+    id
+    content
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post21CommentsId
+    post21CommentsTitle
+  }
+}
+subscription OnCreatePost22($filter: ModelSubscriptionPost22FilterInput) {
+  onCreatePost22(filter: $filter) {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post22CommentsId
+        post22CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost22($filter: ModelSubscriptionPost22FilterInput) {
+  onUpdatePost22(filter: $filter) {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post22CommentsId
+        post22CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost22($filter: ModelSubscriptionPost22FilterInput) {
+  onDeletePost22(filter: $filter) {
+    id
+    title
+    comments {
+      items {
+        id
+        content
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        post22CommentsId
+        post22CommentsTitle
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment22($filter: ModelSubscriptionComment22FilterInput) {
+  onCreateComment22(filter: $filter) {
+    id
+    content
+    post {
+      id
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post22CommentsId
+    post22CommentsTitle
+  }
+}
+subscription OnUpdateComment22($filter: ModelSubscriptionComment22FilterInput) {
+  onUpdateComment22(filter: $filter) {
+    id
+    content
+    post {
+      id
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post22CommentsId
+    post22CommentsTitle
+  }
+}
+subscription OnDeleteComment22($filter: ModelSubscriptionComment22FilterInput) {
+  onDeleteComment22(filter: $filter) {
+    id
+    content
+    post {
+      id
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    post22CommentsId
+    post22CommentsTitle
+  }
+}
+subscription OnCreatePost31($filter: ModelSubscriptionPost31FilterInput) {
+  onCreatePost31(filter: $filter) {
+    id
+    title
+    content
+    tags {
+      items {
+        id
+        post31Id
+        tag31Id
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost31($filter: ModelSubscriptionPost31FilterInput) {
+  onUpdatePost31(filter: $filter) {
+    id
+    title
+    content
+    tags {
+      items {
+        id
+        post31Id
+        tag31Id
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost31($filter: ModelSubscriptionPost31FilterInput) {
+  onDeletePost31(filter: $filter) {
+    id
+    title
+    content
+    tags {
+      items {
+        id
+        post31Id
+        tag31Id
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateTag31($filter: ModelSubscriptionTag31FilterInput) {
+  onCreateTag31(filter: $filter) {
+    id
+    label
+    posts {
+      items {
+        id
+        post31Id
+        tag31Id
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTag31($filter: ModelSubscriptionTag31FilterInput) {
+  onUpdateTag31(filter: $filter) {
+    id
+    label
+    posts {
+      items {
+        id
+        post31Id
+        tag31Id
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTag31($filter: ModelSubscriptionTag31FilterInput) {
+  onDeleteTag31(filter: $filter) {
+    id
+    label
+    posts {
+      items {
+        id
+        post31Id
+        tag31Id
+        tag31label
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePost35($filter: ModelSubscriptionPost35FilterInput) {
+  onCreatePost35(filter: $filter) {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        content
+        postId
+        postTitle
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost35($filter: ModelSubscriptionPost35FilterInput) {
+  onUpdatePost35(filter: $filter) {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        content
+        postId
+        postTitle
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost35($filter: ModelSubscriptionPost35FilterInput) {
+  onDeletePost35(filter: $filter) {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        content
+        postId
+        postTitle
+        desc
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment35($filter: ModelSubscriptionComment35FilterInput) {
+  onCreateComment35(filter: $filter) {
+    commentId
+    content
+    post {
+      postId
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    postId
+    postTitle
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateComment35($filter: ModelSubscriptionComment35FilterInput) {
+  onUpdateComment35(filter: $filter) {
+    commentId
+    content
+    post {
+      postId
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    postId
+    postTitle
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteComment35($filter: ModelSubscriptionComment35FilterInput) {
+  onDeleteComment35(filter: $filter) {
+    commentId
+    content
+    post {
+      postId
+      title
+      comments {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    postId
+    postTitle
+    desc
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePost36($filter: ModelSubscriptionPost36FilterInput) {
+  onCreatePost36(filter: $filter) {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        content
+        postId
+        postTitle
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePost36($filter: ModelSubscriptionPost36FilterInput) {
+  onUpdatePost36(filter: $filter) {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        content
+        postId
+        postTitle
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePost36($filter: ModelSubscriptionPost36FilterInput) {
+  onDeletePost36(filter: $filter) {
+    postId
+    title
+    comments {
+      items {
+        commentId
+        content
+        postId
+        postTitle
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateComment36($filter: ModelSubscriptionComment36FilterInput) {
+  onCreateComment36(filter: $filter) {
+    commentId
+    content
+    postId
+    postTitle
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateComment36($filter: ModelSubscriptionComment36FilterInput) {
+  onUpdateComment36(filter: $filter) {
+    commentId
+    content
+    postId
+    postTitle
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteComment36($filter: ModelSubscriptionComment36FilterInput) {
+  onDeleteComment36(filter: $filter) {
+    commentId
+    content
+    postId
+    postTitle
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateProjectIB($filter: ModelSubscriptionProjectIBFilterInput) {
+  onCreateProjectIB(filter: $filter) {
+    projectId
+    name
+    team {
+      teamId
+      name
+      project {
+        projectId
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        projectIBTeamTeamId
+        projectIBTeamName
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      teamIBProjectProjectId
+      teamIBProjectName
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    projectIBTeamTeamId
+    projectIBTeamName
+  }
+}
+subscription OnUpdateProjectIB($filter: ModelSubscriptionProjectIBFilterInput) {
+  onUpdateProjectIB(filter: $filter) {
+    projectId
+    name
+    team {
+      teamId
+      name
+      project {
+        projectId
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        projectIBTeamTeamId
+        projectIBTeamName
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      teamIBProjectProjectId
+      teamIBProjectName
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    projectIBTeamTeamId
+    projectIBTeamName
+  }
+}
+subscription OnDeleteProjectIB($filter: ModelSubscriptionProjectIBFilterInput) {
+  onDeleteProjectIB(filter: $filter) {
+    projectId
+    name
+    team {
+      teamId
+      name
+      project {
+        projectId
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        projectIBTeamTeamId
+        projectIBTeamName
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      teamIBProjectProjectId
+      teamIBProjectName
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    projectIBTeamTeamId
+    projectIBTeamName
+  }
+}
+subscription OnCreateTeamIB($filter: ModelSubscriptionTeamIBFilterInput) {
+  onCreateTeamIB(filter: $filter) {
+    teamId
+    name
+    project {
+      projectId
+      name
+      team {
+        teamId
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        teamIBProjectProjectId
+        teamIBProjectName
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      projectIBTeamTeamId
+      projectIBTeamName
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    teamIBProjectProjectId
+    teamIBProjectName
+  }
+}
+subscription OnUpdateTeamIB($filter: ModelSubscriptionTeamIBFilterInput) {
+  onUpdateTeamIB(filter: $filter) {
+    teamId
+    name
+    project {
+      projectId
+      name
+      team {
+        teamId
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        teamIBProjectProjectId
+        teamIBProjectName
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      projectIBTeamTeamId
+      projectIBTeamName
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    teamIBProjectProjectId
+    teamIBProjectName
+  }
+}
+subscription OnDeleteTeamIB($filter: ModelSubscriptionTeamIBFilterInput) {
+  onDeleteTeamIB(filter: $filter) {
+    teamId
+    name
+    project {
+      projectId
+      name
+      team {
+        teamId
+        name
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+        teamIBProjectProjectId
+        teamIBProjectName
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+      projectIBTeamTeamId
+      projectIBTeamName
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    teamIBProjectProjectId
+    teamIBProjectName
+  }
+}
+subscription OnCreateBook($filter: ModelSubscriptionBookFilterInput) {
+  onCreateBook(filter: $filter) {
+    isbn
+    name
+    author
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateBook($filter: ModelSubscriptionBookFilterInput) {
+  onUpdateBook(filter: $filter) {
+    isbn
+    name
+    author
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteBook($filter: ModelSubscriptionBookFilterInput) {
+  onDeleteBook(filter: $filter) {
+    isbn
+    name
+    author
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreatePostTags31(
+  $filter: ModelSubscriptionPostTags31FilterInput
+) {
+  onCreatePostTags31(filter: $filter) {
+    id
+    post31Id
+    tag31Id
+    tag31label
+    post31 {
+      id
+      title
+      content
+      tags {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    tag31 {
+      id
+      label
+      posts {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdatePostTags31(
+  $filter: ModelSubscriptionPostTags31FilterInput
+) {
+  onUpdatePostTags31(filter: $filter) {
+    id
+    post31Id
+    tag31Id
+    tag31label
+    post31 {
+      id
+      title
+      content
+      tags {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    tag31 {
+      id
+      label
+      posts {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeletePostTags31(
+  $filter: ModelSubscriptionPostTags31FilterInput
+) {
+  onDeletePostTags31(filter: $filter) {
+    id
+    post31Id
+    tag31Id
+    tag31label
+    post31 {
+      id
+      title
+      content
+      tags {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    tag31 {
+      id
+      label
+      posts {
+        nextToken
+        startedAt
+      }
+      desc
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
